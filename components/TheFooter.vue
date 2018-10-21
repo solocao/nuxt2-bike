@@ -26,14 +26,7 @@
                 <li>
                   <a href="#">新蕾电动车</a>
                 </li>
-                <li>
-                  <a href="#">Properties</a>
-                </li>
-                <li>
-                  <a href="#">Rentals</a>
-                </li>
-                <li>
-                  <a href="#">Properties Parking</a>
+
                 </li>
               </ul>
             </div>
@@ -57,29 +50,29 @@
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 footer-col">
           <h3>联系我们</h3>
-          <div class="contact-item">
+          <!-- <div class="contact-item">
             <div class="icon">
-              <i class="fa fa-map-marker"></i>
+              <i class="fa fa-map-marker"/>
             </div>
             <div class="text">ABC Steet, USA.</div>
           </div>
           <div class="contact-item">
             <div class="icon">
-              <i class="fa fa-phone"></i>
+              <i class="fa fa-phone"/>
             </div>
             <div class="text">111-555-222</div>
           </div>
           <div class="contact-item">
             <div class="icon">
-              <i class="fa fa-fax"></i>
+              <i class="fa fa-fax"/>
             </div>
             <div class="text">111-555-222</div>
-          </div>
+          </div> -->
           <div class="contact-item">
             <div class="icon">
-              <i class="fa fa-envelope-o"></i>
+              <i class="fa fa-envelope-o" />
             </div>
-            <div class="text">info@email.com</div>
+            <div class="text">aaebike@126.com</div>
           </div>
         </div>
       </div>

@@ -1,15 +1,14 @@
 <template>
   <div>
-    <!-- <nav-swiper></nav-swiper> -->
+    <nav-swiper/>
     <main class="capsule">
       <div class="row sectionTitle">
         <h3> 品牌电动车</h3>
         <h5>热门电单车 底价出售</h5>
       </div>
-
-      <!-- <div class="row product-content">
-        <product-item v-for="product in products" :product="product" :key="product._id"/>
-      </div> -->
+      <div class="row product-content">
+        <product-item v-for="product in products" :product="product" :key="product._id" />
+      </div>
       <div style="margin-top:30px">
         <home-banner />
       </div>
@@ -32,7 +31,7 @@
         <h3>新闻资讯</h3>
         <h5>电单车行业新闻</h5>
       </div>
-      <div class="row" v-if="false" style="margin-top:35px">
+      <div v-if="false" class="row" style="margin-top:35px">
         <Col span="16">
         <post-large v-for="i in 8" :key="i" />
         </Col>
