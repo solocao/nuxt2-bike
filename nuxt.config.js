@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const path = require('path')
 
 module.exports = {
   mode: 'universal',
@@ -24,12 +25,25 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
+  css: [
+    '~assets/css/main.css',
+    '~style/app.styl',
+    '~assets/css/bootstrap.min.css',
+    'font-awesome/css/font-awesome.min.css',
+    'swiper/dist/css/swiper.css'
+  ],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+
+  plugins: [
+    { src: '~plugins/iview', ssr: true },
+    { src: '~plugins/axios.js', ssr: false },
+    { src: '~/plugins/swiper.js', ssr: false },
+    { src: '~/plugins/route' },
+    { src: '~/plugins/localStorage.js', ssr: false }
+  ],
 
   /*
   ** Nuxt.js modules
@@ -57,6 +71,7 @@ module.exports = {
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push()
       }
+      config.resolve.alias['components'] = path.resolve(__dirname, 'components')
     }
   }
 }
